@@ -1,6 +1,7 @@
 import Aboutpage from "@/components/About/Aboutpage";
 import Homepage from "@/components/Home/Homepage";
 import NotFound from "@/components/Notfound";
+import OrderOnline from "@/components/Order/OrderOnline";
 import Menupage from "@/components/Page/Menupage";
 import Reservation from "@/components/Reservation/Reservationpage";
 import MainLayout from "@/layouts/MainLayout";
@@ -28,6 +29,10 @@ const router = createBrowserRouter(
         {
           path: "reservation",
           element: <Reservation />,
+        },
+        {
+          path: "order",
+          element: <OrderOnline />,
         },
       ],
     },

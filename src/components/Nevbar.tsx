@@ -67,13 +67,15 @@ const Nevbar: React.FC = () => {
             >
               Login
             </a>
-            <Button
-              className="rounded-full px-5 py-2"
-              variant="default"
-              size="default"
-            >
-              Order Online
-            </Button>
+            <Link to="/order">
+              <Button
+                className="rounded-full px-5 py-2"
+                variant="default"
+                size="default"
+              >
+                Order Online
+              </Button>
+            </Link>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import About from "../Home/about";
+import About from "../Home/About";
 
 const Aboutpage = () => {
   return (
