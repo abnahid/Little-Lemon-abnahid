@@ -246,7 +246,6 @@ const ReservationForm: React.FC = () => {
                 </div>
               </div>
 
-              {/* Phone and Special Request row */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="phone" className="text-sm text-gray-600">
