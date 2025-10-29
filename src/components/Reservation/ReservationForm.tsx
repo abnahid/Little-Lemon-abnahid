@@ -67,7 +67,6 @@ const ReservationForm: React.FC = () => {
     setConfirmedData(formData);
     setShowConfirm(true);
 
-    // Save confirmed reservation to localStorage history
     const reservationHistory = JSON.parse(
       localStorage.getItem("reservationHistory") || "[]"
     );
