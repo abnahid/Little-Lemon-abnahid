@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
 
             <div className="mt-8">
               <Button
-                className="rounded-md bg-secondary text-primary hover:bg-primary-foreground/90 text-xl py-5 font-bold font-karla"
+                className="rounded-full bg-yellow-400 text-primary hover:bg-yellow-500 px-5  text-xl py-5.5 font-bold font-karla"
                 variant="default"
               >
                 Reserve a Table

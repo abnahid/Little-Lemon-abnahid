@@ -32,7 +32,7 @@ const Maneu: React.FC = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-22">
       <div className="flex items-center justify-between mb-16">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary font-karla">
           This Week Specials!
         </h2>
 

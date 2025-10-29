@@ -5,7 +5,7 @@ const reviews = [
     id: 1,
     name: "Ayesha Khan",
     rating: 5,
-    text: "Amazing food and friendly staff! The lemon dessert was the highlight — light, tangy and perfect.",
+    text: "Amazing food and friendly staff! The lemon dessert was the highlight light, tangy and perfect.",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const reviews = [
     id: 3,
     name: "Fatima Noor",
     rating: 5,
-    text: "Best Greek salad I've had outside Greece — fresh, crunchy and well seasoned. Highly recommend!",
+    text: "Best Greek salad I've had outside Greece fresh, crunchy and well seasoned. Highly recommend!",
   },
   {
     id: 4,
@@ -31,10 +31,9 @@ const Testimonial: React.FC = () => {
   return (
     <section className="w-full bg-primary text-primary-foreground py-24">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-center text-2xl sm:text-3xl font-semibold text-secondary mb-8">
+        <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-secondary font-karla mb-8">
           Testimonials
         </h2>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reviews.map((r) => (
             <div
@@ -71,9 +70,9 @@ const Testimonial: React.FC = () => {
                 </div>
               </div>
 
-              <p className="mt-4 text-sm text-gray-600 flex-1">{r.text}</p>
+              <p className="mt-4 text-sm text-gray-600 flex-1 ">{r.text}</p>
 
-              <div className="mt-4 text-sm text-gray-500">Verified diner</div>
+              <div className="mt-4 text-sm text-gray-500 ">Verified diner</div>
             </div>
           ))}
         </div>

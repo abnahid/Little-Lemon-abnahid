@@ -2,7 +2,7 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
+    <section className="max-w-7xl mx-auto px-6 pt-16 pb-30">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left: headings and paragraphs */}
         <div className="order-2 lg:order-1">
@@ -27,93 +27,24 @@ const About: React.FC = () => {
 
         {/* Right: stacked image placeholders */}
         <div className="relative flex justify-center order-1 lg:order-2 mb-6 lg:mb-0">
-          <div className="w-48 h-48 bg-gray-200 rounded-md shadow-sm flex items-center justify-center">
-            <svg
-              width="70%"
-              height="70%"
-              viewBox="0 0 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-              className="opacity-40"
-            >
-              <rect width="100" height="100" fill="#e5e7eb" />
-              <line
-                x1="0"
-                y1="0"
-                x2="100"
-                y2="100"
-                stroke="#9ca3af"
-                strokeWidth="2"
-              />
-              <line
-                x1="100"
-                y1="0"
-                x2="0"
-                y2="100"
-                stroke="#9ca3af"
-                strokeWidth="2"
-              />
-            </svg>
+          <div className="bg-gray-200 rounded-md shadow-sm flex items-center justify-center left-0 -bottom-10 transform translate-y-20 -translate-x-35 z-10">
+            <img
+              src="/images/restaurant chef B-min.webp"
+              alt=""
+              className=" w-[272px] h-[338px] object-cover object-left-center"
+            />
           </div>
 
-          <div className="w-48 h-48 bg-gray-300 rounded-md shadow-sm absolute right-0 top-0 transform translate-x-8 -translate-y-6">
-            <svg
-              width="70%"
-              height="70%"
-              viewBox="0 0 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-              className="opacity-40"
-            >
-              <rect width="100" height="100" fill="#e5e7eb" />
-              <line
-                x1="0"
-                y1="0"
-                x2="100"
-                y2="100"
-                stroke="#9ca3af"
-                strokeWidth="2"
-              />
-              <line
-                x1="100"
-                y1="0"
-                x2="0"
-                y2="100"
-                stroke="#9ca3af"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
-
-          <div className="w-40 h-40 bg-gray-100 rounded-md shadow-sm absolute left-0 bottom-0 transform -translate-x-6 translate-y-8">
-            <svg
-              width="70%"
-              height="70%"
-              viewBox="0 0 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-              className="opacity-40"
-            >
-              <rect width="100" height="100" fill="#e5e7eb" />
-              <line
-                x1="0"
-                y1="0"
-                x2="100"
-                y2="100"
-                stroke="#9ca3af"
-                strokeWidth="2"
-              />
-              <line
-                x1="100"
-                y1="0"
-                x2="0"
-                y2="100"
-                stroke="#9ca3af"
-                strokeWidth="2"
-              />
-            </svg>
+          <div className="bg-gray-300 rounded-md shadow-sm absolute ">
+            <img
+              src="/images/Mario and Adrian b-min.webp"
+              alt=""
+              className=" w-[272px] h-[338px] object-cover object-center"
+            />
           </div>
         </div>
       </div>
     </section>
   );
 };
-
 export default About;
