@@ -112,7 +112,6 @@ const ReservationForm: React.FC = () => {
             </legend>
 
             <div className="space-y-4">
-              {/* Occasion and Date row */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="occasion" className="text-sm text-gray-600">
