@@ -49,7 +49,6 @@ const ReservationForm: React.FC = () => {
     }
   }, []);
 
-  // Save to localStorage when form data changes
   useEffect(() => {
     localStorage.setItem("reservationForm", JSON.stringify(formData));
   }, [formData]);
