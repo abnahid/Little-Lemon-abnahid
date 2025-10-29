@@ -37,7 +37,6 @@ const ReservationForm: React.FC = () => {
     (ReservationData & { confirmedAt: string })[]
   >([]);
 
-  // Load from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem("reservationForm");
     if (saved) {
