@@ -43,7 +43,6 @@ const ReservationForm: React.FC = () => {
       setFormData(JSON.parse(saved));
     }
 
-    // Load reservation history
     const history = localStorage.getItem("reservationHistory");
     if (history) {
       setReservationHistory(JSON.parse(history));
