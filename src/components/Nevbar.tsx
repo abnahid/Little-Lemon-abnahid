@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const Nevbar: React.FC = () => {
   const [open, setOpen] = useState(false);
 
-  const links = ["Home", "About", "Menu", "Reservation"];
+  const links = ["Home", "About", "Menus", "Reservation"];
 
   return (
     <header className="w-full bg-transparent">
@@ -16,16 +17,20 @@ const Nevbar: React.FC = () => {
           {/* center: nav links */}
           <nav className="flex-1">
             <ul className="hidden lg:flex items-center justify-center gap-10">
-              {links.map((l) => (
-                <li key={l}>
-                  <a
-                    href="#"
-                    className="text-gray-700 dark:text-gray-100 hover:text-primary transition-colors font-karla"
-                  >
-                    {l}
-                  </a>
-                </li>
-              ))}
+              {links.map((l) => {
+                const path =
+                  l.toLowerCase() === "home" ? "/" : `/${l.toLowerCase()}`;
+                return (
+                  <li key={l}>
+                    <Link
+                      to={path}
+                      className="text-gray-700 dark:text-gray-100 hover:text-primary transition-colors font-karla"
+                    >
+                      {l}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
 
             {/* mobile: small nav (hidden on lg) */}
@@ -76,28 +81,37 @@ const Nevbar: React.FC = () => {
         {open && (
           <div className="lg:hidden mt-2 pb-4">
             <ul className="flex flex-col gap-3 text-center">
-              {links.map((l) => (
-                <li key={l}>
-                  <a
-                    href="#"
-                    className="block text-gray-700 dark:text-gray-100 py-2"
-                  >
-                    {l}
-                  </a>
-                </li>
-              ))}
+              {links.map((l) => {
+                const path =
+                  l.toLowerCase() === "home" ? "/" : `/${l.toLowerCase()}`;
+                return (
+                  <li key={l}>
+                    <Link
+                      to={path}
+                      className="block text-gray-700 dark:text-gray-100 py-2"
+                    >
+                      {l}
+                    </Link>
+                  </li>
+                );
+              })}
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/login"
                   className="block text-gray-700 dark:text-gray-100 py-2"
                 >
                   Login
-                </a>
+                </Link>
               </li>
               <li className="px-6">
-                <Button className="w-full rounded-full" variant="default">
-                  Order Online
-                </Button>
+                <Link
+                  to="/order"
+                  className="block text-gray-700 dark:text-gray-100 py-2"
+                >
+                  <Button className="w-full rounded-full" variant="default">
+                    Order Online
+                  </Button>
+                </Link>
               </li>
             </ul>
           </div>
