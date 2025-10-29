@@ -291,7 +291,6 @@ const ReservationForm: React.FC = () => {
           </div>
         </form>
 
-        {/* Right: Image placeholder */}
         <div className="flex items-center justify-center">
           <div className="w-full h-96 bg-gray-300 rounded-lg shadow-lg overflow-hidden flex items-center justify-center">
             <img
