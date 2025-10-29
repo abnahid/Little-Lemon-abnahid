@@ -105,7 +105,6 @@ const ReservationForm: React.FC = () => {
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        {/* Left: Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <fieldset>
             <legend className="text-lg font-semibold text-gray-800 mb-4">
